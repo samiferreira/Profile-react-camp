@@ -29,17 +29,24 @@ body {
 }
 
 .social {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
 }
 
 .social-box {
-  background-color: #ddd;
-  padding: 10px 20px;
+  margin-bottom: 24px; /* Removido o margin-right */
+}
+.social-box a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 12px;
+  border: 1px solid #333;
   border-radius: 5px;
-  margin-bottom: 10px;
+  transition: all 0.3s ease;
 }
 
-.social a {
-  text-decoration: none;
-  color: black;
+.social-box a:hover {
+  background-color: #333;
+  color: #fff;
 }
